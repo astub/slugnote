@@ -16,9 +16,67 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap core -->
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"></script>
+    
   </head>
   <body>
-    <h1>TESTSTSTSTSt</h1>
+    
+  <div class="container">
+    
+    <form id="group_form">
+
+      <div class="form-group">
+        <label for="organization_sel"><h6 class="mb-0">Organization</h6></label>
+        <select class="form-control" id="organization_sel">
+          <option>Sample Organization A</option>
+          <option>Sample Organization B</option>
+        </select>
+        <p class="text-muted mb-0"><small>Choose your Organization to add this query to.</small></p>
+      </div>
+
+      <div class="form-group">
+        <label for="title_text"><h6 class="mb-0">Title</h6></label>
+        <input class="form-control" type="text" value="" id="title_text">
+        <p class="text-muted mb-0"><small>This is the graph title</small></p>
+      </div>
+
+
+      <div class="form-group">
+        <label for="query_text"><h6 class="mb-0">Query</h6></label>
+        <input class="form-control" type="text" value="" id="query_text">
+        <p class="text-muted mb-0"><small>Password for any coworkers that can join and manage the group</small></p>
+      </div>
+
+ 
+      <input type="hidden" value="" id="group_modal_id">
+      
+      <p class="text-muted mb-0"><small>Linking your company's Facebook Page will allow users to...</small></p>
+      <ul class="text-muted">
+        <li><small>Message you through your Facebook Page</small></li>
+        <li><small>Pay you through your Facebook Page</small></li>
+      </ul>
+
+    </form> <!-- /form -->
+    
+  </div>
+    
 
   </body>
 </html>
